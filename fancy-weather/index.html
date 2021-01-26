@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fancy Weather</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+</head>
+<body>
+
+ <div id="loader-wrapper" class="loader">
+	<div class="loader-inner">
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+	</div>
+</div>
+
+    <div id = "vivod"></div>
+  <div class="toogle">
+  <div class="toogle__bar">
+  <button class="button button--reload" id = "rel"><div id = "spinner" class="spinner"></div></button>
+  <div class="language-menu">
+  <select class="drop-down-menu__face-button language-menu button" id="selectBox" onchange="changeFunc();">
+  <option class="b1 drop-down-menu__item button" value="1">ru</option>
+  <option class="b2 drop-down-menu__item button noactive" value="2">en</option>
+  <option class="b3 drop-down-menu__item button noactive" value="3">be</option>
+  </select>
+</div>
+  <button class="button button--f">°F</button>
+  <button class="button button--c">°C</button>
+</div>
+  <div id = "vivod_error"></div>
+<div class="toogle__weather">
+  <input type='search' class="search-input" id ="search" autocomplete="off" name="search-city" required="" placeholder="">
+  <button class="button search-input__button" id = 'send' onclick="ShowSelection()"></button>
+  <button class="search-input__voice-button" id = "mic"></button>
+</div>
+</div>
+
+<div class="main-wrapper" id = "main">
+  <div class="weather-data-cluster">
+    <p class="weather-data-cluster__location"></p>
+    <p class="weather-data-cluster__date-time"></p>
+    <p class="weather-data-cluster__temperature-today"></p>
+    <div class = "for-pictures"></div>
+    <div class="weather-data-cluster__weather-data"></div>
+    <div class="forecast d1"></div>
+    <div class="forecast d2"></div>
+    <div class="forecast d3"></div>
+    </div>
+      <div class="map-cluster">
+        <div class="map-cluster__map" id = "map"></div>
+        <div class="map-cluster__coordinates"></div>
+      </div>
+    </div>
+
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="scripts/preload.js"></script>
+  <script src="scripts/check.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/ShowSelection.js"></script>
+  <script src="scripts/getLocation.js"></script>
+  <script src="scripts/getInformation.js"></script>
+  <script src="scripts/getCountry.js"></script>
+  <script src="scripts/getWeather_for_3days.js"></script>
+  <script src="scripts/getBackground.js"></script>
+  <script src="scripts/render.js"></script>
+  <script src="scripts/changeFunc.js"></script>
+  <script src="scripts/change_icons.js"></script>
+  <script src="scripts/sound.js"></script>
+</body>
+</html>

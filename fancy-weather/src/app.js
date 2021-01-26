@@ -1,0 +1,13 @@
+import '../scripts/change_icons.js';
+import '../scripts/changeFunc.js';
+import '../scripts/check.js';
+import '../scripts/getBackground.js';
+import '../scripts/getCountry.js';
+import '../scripts/getInformation.js';
+import '../scripts/getLocation.js';
+import '../scripts/getWeather_for_3days.js';
+import '../scripts/preload.js';
+import '../scripts/render.js';
+import '../scripts/script.js';
+import '../scripts/ShowSelection.js';
+import '../scripts/sound.js';
